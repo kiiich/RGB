@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		01F041E826E537A40076FD57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F041E726E537A40076FD57 /* AppDelegate.swift */; };
 		01F041EA26E537A40076FD57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F041E926E537A40076FD57 /* SceneDelegate.swift */; };
-		01F041EC26E537A40076FD57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F041EB26E537A40076FD57 /* ViewController.swift */; };
+		01F041EC26E537A40076FD57 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F041EB26E537A40076FD57 /* ColorViewController.swift */; };
 		01F041EF26E537A40076FD57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01F041ED26E537A40076FD57 /* Main.storyboard */; };
 		01F041F126E537A60076FD57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01F041F026E537A60076FD57 /* Assets.xcassets */; };
 		01F041F426E537A60076FD57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01F041F226E537A60076FD57 /* LaunchScreen.storyboard */; };
+		01F041FC26E540000076FD57 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F041FB26E540000076FD57 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		01F041E426E537A40076FD57 /* RGB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01F041E726E537A40076FD57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01F041E926E537A40076FD57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		01F041EB26E537A40076FD57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		01F041EB26E537A40076FD57 /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		01F041EE26E537A40076FD57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01F041F026E537A60076FD57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01F041F326E537A60076FD57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01F041F526E537A60076FD57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01F041FB26E540000076FD57 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				01F041E726E537A40076FD57 /* AppDelegate.swift */,
 				01F041E926E537A40076FD57 /* SceneDelegate.swift */,
-				01F041EB26E537A40076FD57 /* ViewController.swift */,
+				01F041EB26E537A40076FD57 /* ColorViewController.swift */,
 				01F041ED26E537A40076FD57 /* Main.storyboard */,
+				01F041FB26E540000076FD57 /* SettingsViewController.swift */,
 				01F041F026E537A60076FD57 /* Assets.xcassets */,
 				01F041F226E537A60076FD57 /* LaunchScreen.storyboard */,
 				01F041F526E537A60076FD57 /* Info.plist */,
@@ -137,9 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01F041EC26E537A40076FD57 /* ViewController.swift in Sources */,
+				01F041EC26E537A40076FD57 /* ColorViewController.swift in Sources */,
 				01F041E826E537A40076FD57 /* AppDelegate.swift in Sources */,
 				01F041EA26E537A40076FD57 /* SceneDelegate.swift in Sources */,
+				01F041FC26E540000076FD57 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
