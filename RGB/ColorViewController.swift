@@ -8,9 +8,7 @@
 import UIKit
 
 protocol ColorSetterDelegate {
-  
     func setColor(color: UIColor)
-    
 }
 
 class ColorViewController: UIViewController {
@@ -19,7 +17,6 @@ class ColorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -27,13 +24,10 @@ class ColorViewController: UIViewController {
         guard let settingsVC = segue.destination as? SettingsViewController else {
             return
         }
-        
+    
         settingsVC.currentColor = mainView.backgroundColor 
         settingsVC.delegate = self
-        
-        
     }
-
 }
 
 extension ColorViewController: ColorSetterDelegate {
