@@ -25,6 +25,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="mainView" destination="8bC-Xf-vdC" id="sS5-lK-oyd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -136,6 +139,9 @@
                                 <state key="normal" title="Done">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="donePressed:" destination="Oe9-wC-wDR" eventType="touchUpInside" id="3UE-v8-swN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b1o-XD-Enz"/>
@@ -155,7 +161,7 @@
                     <connections>
                         <outlet property="blueSlider" destination="ppM-6Y-dis" id="Woe-nQ-zK0"/>
                         <outlet property="blueValueLabel" destination="cxi-dD-t4L" id="foi-TS-JOh"/>
-                        <outlet property="currentColor" destination="icY-Bh-Ize" id="7b3-dQ-rP0"/>
+                        <outlet property="currentColorView" destination="icY-Bh-Ize" id="Kzy-aG-ZAQ"/>
                         <outlet property="greenSlider" destination="AKS-Z1-hDy" id="3Eh-NC-fwp"/>
                         <outlet property="greenValueLabel" destination="vWn-Iv-ZTn" id="kle-qv-i1E"/>
                         <outlet property="redSlider" destination="2Ji-ae-Z4j" id="xHb-cp-YmR"/>

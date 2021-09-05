@@ -9,7 +9,7 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
-    @IBOutlet weak var currentColor: UIView!
+    @IBOutlet weak var currentColorView: UIView!
     
     @IBOutlet weak var redValueLabel: UILabel!
     @IBOutlet weak var greenValueLabel: UILabel!
@@ -19,9 +19,12 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var greenSlider: UISlider!
     @IBOutlet weak var blueSlider: UISlider!
     
+    var currentColor: UIColor!
+    var delegate: ColorSetterDelegate!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setCurrentColor()
+        initColor()
         setColorValueLabels()
         setupUI()
     }
@@ -31,8 +34,35 @@ class SettingsViewController: UIViewController {
         setColorValueLabels()
     }
     
+    @IBAction func donePressed(_ sender: UIButton) {
+        delegate.setColor(color: currentColorView.backgroundColor ?? .white)
+        dismiss(animated: true)
+    }
+    
+    private func initColor() {
+        currentColorView.backgroundColor = currentColor
+        
+        var red: CGFloat = 0
+        var green: CGFloat = 0
+        var blue: CGFloat = 0
+
+        let isConverted = currentColor.getRed(
+            &red,
+            green: &green,
+            blue: &blue,
+            alpha: nil)
+        
+        if !isConverted {
+            return
+        }
+        
+        redSlider.value = Float(red)
+        greenSlider.value = Float(green)
+        blueSlider.value = Float(blue)
+    }
+    
     private func setCurrentColor() {
-        currentColor.backgroundColor = UIColor(
+        currentColorView.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
             green: CGFloat(greenSlider.value),
             blue: CGFloat(blueSlider.value),
@@ -47,7 +77,7 @@ class SettingsViewController: UIViewController {
     }
     
     private func setupUI() {
-        currentColor.layer.cornerRadius = 15
+        currentColorView.layer.cornerRadius = 15
     }
     
     private func formattedString(_ value: Float) -> String {
